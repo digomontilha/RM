@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Comercial - Sistema RM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Sistema RM</h1>
+                <p>Represa Management</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o Parque</a></li>
+                    <li><a href="preservacao.html">Preservação</a></li>
+                    <li><a href="comercios.html" class="active">Guia Comercial</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Guia Comercial Sustentável</h2>
+            <p>Conheça os estabelecimentos locais que adotam práticas sustentáveis e apoiam a preservação ambiental</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="filter-section" style="margin-bottom: 40px;">
+                <h2>Filtrar por categoria</h2>
+                <div class="filter-buttons" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
+                    <button class="btn-small filter-btn active" data-filter="all">Todos</button>
+                    <button class="btn-small filter-btn" data-filter="restaurante">Restaurantes</button>
+                    <button class="btn-small filter-btn" data-filter="cafe">Cafés</button>
+                    <button class="btn-small filter-btn" data-filter="loja">Lojas</button>
+                    <button class="btn-small filter-btn" data-filter="servico">Serviços</button>
+                    <button class="btn-small filter-btn" data-filter="hospedagem">Hospedagem</button>
+                </div>
+            </div>
+
+            <div class="business-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Restaurante 1 -->
+                <div class="business-card" data-category="restaurante" style="background-color: var(--branco); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px var(--sombra);">
+                    <div class="image-placeholder" style="height: 200px;">
+                        <div class="placeholder-text">Foto do Restaurante Verde</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="margin-bottom: 0;">Restaurante Verde</h3>
+                            <span class="sustainability-badge" style="background-color: var(--verde); color: var(--branco); padding: 5px 10px; border-radius: 20px; font-size: 12px;">Nível Ouro</span>
+                        </div>
+                        <p style="color: #666; margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> Av. da Represa, 123</p>
+                        <p>Restaurante com menu orgânico e sazonal, utilizando ingredientes locais e técnicas de baixo impacto ambiental.</p>
+                        <div class="sustainable-practices" style="margin-top: 15px;">
+                            <p style="font-weight: 600; margin-bottom: 5px;">Práticas sustentáveis:</p>
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Compostagem de resíduos orgânicos</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Energia solar</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Zero plásticos descartáveis</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                            <a href="#" class="btn-small">Ver detalhes</a>
+                            <div>
+                                <a href="#" style="margin-right: 10px;"><i class="fas fa-globe"></i></a>
+                                <a href="#" style="margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Café 1 -->
+                <div class="business-card" data-category="cafe" style="background-color: var(--branco); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px var(--sombra);">
+                    <div class="image-placeholder" style="height: 200px;">
+                        <div class="placeholder-text">Foto do Café Sustentável</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="margin-bottom: 0;">Café Sustentável</h3>
+                            <span class="sustainability-badge" style="background-color: var(--verde); color: var(--branco); padding: 5px 10px; border-radius: 20px; font-size: 12px;">Nível Prata</span>
+                        </div>
+                        <p style="color: #666; margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> Rua das Árvores, 45</p>
+                        <p>Cafeteria especializada em grãos orgânicos e de comércio justo, com opções veganas e ambiente acolhedor.</p>
+                        <div class="sustainable-practices" style="margin-top: 15px;">
+                            <p style="font-weight: 600; margin-bottom: 5px;">Práticas sustentáveis:</p>
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Borra de café para adubo</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Copos reutilizáveis</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Produtos de limpeza biodegradáveis</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                            <a href="#" class="btn-small">Ver detalhes</a>
+                            <div>
+                                <a href="#" style="margin-right: 10px;"><i class="fas fa-globe"></i></a>
+                                <a href="#" style="margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loja 1 -->
+                <div class="business-card" data-category="loja" style="background-color: var(--branco); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px var(--sombra);">
+                    <div class="image-placeholder" style="height: 200px;">
+                        <div class="placeholder-text">Foto da Eco Boutique</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="margin-bottom: 0;">Eco Boutique</h3>
+                            <span class="sustainability-badge" style="background-color: var(--verde); color: var(--branco); padding: 5px 10px; border-radius: 20px; font-size: 12px;">Nível Ouro</span>
+                        </div>
+                        <p style="color: #666; margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> Alameda das Flores, 78</p>
+                        <p>Loja de roupas e acessórios produzidos com materiais sustentáveis, upcycling e técnicas artesanais locais.</p>
+                        <div class="sustainable-practices" style="margin-top: 15px;">
+                            <p style="font-weight: 600; margin-bottom: 5px;">Práticas sustentáveis:</p>
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Materiais orgânicos e reciclados</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Embalagens biodegradáveis</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Programa de reciclagem de roupas</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                            <a href="#" class="btn-small">Ver detalhes</a>
+                            <div>
+                                <a href="#" style="margin-right: 10px;"><i class="fas fa-globe"></i></a>
+                                <a href="#" style="margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviço 1 -->
+                <div class="business-card" data-category="servico" style="background-color: var(--branco); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px var(--sombra);">
+                    <div class="image-placeholder" style="height: 200px;">
+                        <div class="placeholder-text">Foto da Eco Lavagem</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="margin-bottom: 0;">Eco Lavagem</h3>
+                            <span class="sustainability-badge" style="background-color: var(--verde); color: var(--branco); padding: 5px 10px; border-radius: 20px; font-size: 12px;">Nível Prata</span>
+                        </div>
+                        <p style="color: #666; margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> Rua dos Ipês, 210</p>
+                        <p>Lavagem ecológica de veículos com economia de água, produtos biodegradáveis e sistema de reuso.</p>
+                        <div class="sustainable-practices" style="margin-top: 15px;">
+                            <p style="font-weight: 600; margin-bottom: 5px;">Práticas sustentáveis:</p>
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Economia de 80% de água</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Produtos biodegradáveis</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Captação de água da chuva</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                            <a href="#" class="btn-small">Ver detalhes</a>
+                            <div>
+                                <a href="#" style="margin-right: 10px;"><i class="fas fa-globe"></i></a>
+                                <a href="#" style="margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hospedagem 1 -->
+                <div class="business-card" data-category="hospedagem" style="background-color: var(--branco); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px var(--sombra);">
+                    <div class="image-placeholder" style="height: 200px;">
+                        <div class="placeholder-text">Foto da Pousada Natureza</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="margin-bottom: 0;">Pousada Natureza</h3>
+                            <span class="sustainability-badge" style="background-color: var(--verde); color: var(--branco); padding: 5px 10px; border-radius: 20px; font-size: 12px;">Nível Ouro</span>
+                        </div>
+                        <p style="color: #666; margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> Estrada da Represa, km 3</p>
+                        <p>Hospedagem com arquitetura sustentável, integrada à natureza e com práticas de baixo impacto ambiental.</p>
+                        <div class="sustainable-practices" style="margin-top: 15px;">
+                            <p style="font-weight: 600; margin-bottom: 5px;">Práticas sustentáveis:</p>
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Energia 100% solar</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Tratamento natural de efluentes</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Horta orgânica própria</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                            <a href="#" class="btn-small">Ver detalhes</a>
+                            <div>
+                                <a href="#" style="margin-right: 10px;"><i class="fas fa-globe"></i></a>
+                                <a href="#" style="margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurante 2 -->
+                <div class="business-card" data-category="restaurante" style="background-color: var(--branco); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px var(--sombra);">
+                    <div class="image-placeholder" style="height: 200px;">
+                        <div class="placeholder-text">Foto do Bistrô da Represa</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="margin-bottom: 0;">Bistrô da Represa</h3>
+                            <span class="sustainability-badge" style="background-color: var(--verde); color: var(--branco); padding: 5px 10px; border-radius: 20px; font-size: 12px;">Nível Bronze</span>
+                        </div>
+                        <p style="color: #666; margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> Rua das Garças, 56</p>
+                        <p>Bistrô com vista para a represa, especializado em peixes e frutos do mar sustentáveis e de origem certificada.</p>
+                        <div class="sustainable-practices" style="margin-top: 15px;">
+                            <p style="font-weight: 600; margin-bottom: 5px;">Práticas sustentáveis:</p>
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Pesca sustentável certificada</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Redução de desperdício alimentar</li>
+                                <li><i class="fas fa-check" style="color: var(--verde);"></i> Economia de água na cozinha</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                            <a href="#" class="btn-small">Ver detalhes</a>
+                            <div>
+                                <a href="#" style="margin-right: 10px;"><i class="fas fa-globe"></i></a>
+                                <a href="#" style="margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" style="background-color: var(--cinza-claro);">
+        <div class="container">
+            <h2>Programa Selo Sustentável</h2>
+            <div class="two-columns">
+                <div class="column">
+                    <p>O Programa Selo Sustentável é uma iniciativa da Prefeitura de Jundiaí em parceria com a DAE e associações comerciais locais. O objetivo é reconhecer e incentivar práticas sustentáveis nos estabelecimentos comerciais da região do Parque da Represa.</p>
+                    <p>Os estabelecimentos são avaliados em diversas categorias, como gestão de resíduos, economia de água e energia, responsabilidade social e engajamento comunitário. Com base na pontuação obtida, recebem o selo nas categorias Bronze, Prata ou Ouro.</p>
+                    <p>Além do reconhecimento, os estabelecimentos participantes recebem capacitação, consultoria técnica e são promovidos nos canais oficiais da cidade e do Sistema RM.</p>
+                    <a href="#" class="btn-small" style="margin-top: 15px;">Saiba mais sobre o programa</a>
+                </div>
+                <div class="column">
+                    <div class="seal-levels" style="background-color: var(--branco); padding: 25px; border-radius: 10px; box-shadow: 0 5px 15px var(--sombra);">
+                        <h3>Níveis do Selo</h3>
+                        <div class="seal-level" style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <div style="width: 50px; height: 50px; background-color: #CD7F32; border-radius: 50%; margin-right: 15px; display: flex; justify-content: center; align-items: center;">
+                                <i class="fas fa-award" style="color: var(--branco); font-size: 24px;"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Bronze</h4>
+                                <p style="margin-bottom: 0;">Estabelecimentos que iniciaram a jornada sustentável e implementaram as práticas básicas.</p>
+                            </div>
+                        </div>
+                        <div class="seal-level" style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <div style="width: 50px; height: 50px; background-color: #C0C0C0; border-radius: 50%; margin-right: 15px; display: flex; justify-content: center; align-items: center;">
+                                <i class="fas fa-award" style="color: var(--branco); font-size: 24px;"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Prata</h4>
+                                <p style="margin-bottom: 0;">Estabelecimentos com práticas sustentáveis consolidadas e resultados mensuráveis.</p>
+                            </div>
+                        </div>
+                        <div class="seal-level" style="display: flex; align-items: center;">
+                            <div style="width: 50px; height: 50px; background-color: #FFD700; border-radius: 50%; margin-right: 15px; display: flex; justify-content: center; align-items: center;">
+                                <i class="fas fa-award" style="color: var(--branco); font-size: 24px;"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Ouro</h4>
+                                <p style="margin-bottom: 0;">Estabelecimentos referência em sustentabilidade, com práticas inovadoras e impacto positivo comprovado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Seja um Comércio Sustentável</h2>
+            <div class="two-columns">
+                <div class="column">
+                    <div class="image-placeholder">
+                        <div class="placeholder-text">Imagem de capacitação para comerciantes</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <p>Você é proprietário de um estabelecimento na região do Parque da Represa e quer torná-lo mais sustentável? O Sistema RM oferece suporte para que você inicie ou aprimore suas práticas sustentáveis.</p>
+                    <h3>Benefícios:</h3>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 20px;">
+                        <li>Redução de custos operacionais</li>
+                        <li>Atração de clientes conscientes</li>
+                        <li>Visibilidade no Guia Comercial</li>
+                        <li>Acesso a capacitações e consultorias</li>
+                        <li>Networking com outros estabelecimentos sustentáveis</li>
+                        <li>Contribuição para a preservação do Parque da Represa</li>
+                    </ul>
+                    <a href="contato.html" class="btn">Cadastre seu estabelecimento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Apoie os comércios sustentáveis do Parque da Represa</h2>
+            <p>Sua escolha faz a diferença para o meio ambiente e para a economia local</p>
+            <a href="#" class="btn">Compartilhar o guia</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sistema RM</h3>
+                    <p>Represa Management</p>
+                    <p>Uma iniciativa para o Parque da Represa em Jundiaí</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre o Parque</a></li>
+                        <li><a href="preservacao.html">Preservação</a></li>
+                        <li><a href="comercios.html">Guia Comercial</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@sistemarm.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 9XXXX-XXXX</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sistema RM (Represa Management). Todos os direitos reservados.</p>
+                <p>Desenvolvido por Rodrigo Montilha</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Script para filtrar os comércios por categoria
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const businessCards = document.querySelectorAll('.business-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    businessCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
